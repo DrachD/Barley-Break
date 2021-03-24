@@ -15,10 +15,7 @@ public class ToggleController : MonoBehaviour
     private MusicPlayer musicPlayer;
     private SFXPlayer sfxPlayer;
 
-    private void Awake()
-    {
-        toggle = GetComponent<Toggle>();
-    }
+    private void Awake() => toggle = GetComponent<Toggle>();
     private void Start()
     {
         musicPlayer = FindObjectOfType<MusicPlayer>();
@@ -34,15 +31,15 @@ public class ToggleController : MonoBehaviour
         {
             toggle.targetGraphic.GetComponent<Image>().sprite = spriteOff;
             labelText.text = textOff;
-            musicPlayer.SetVolume(0);
-            sfxPlayer.SetVolume(0);
+            musicPlayer.Volume = 0;
+            sfxPlayer.Volume = 0;
         }
         else if (!isOn)
         {
             toggle.targetGraphic.GetComponent<Image>().sprite = spriteOn;
             labelText.text = textOn;
-            musicPlayer.SetVolume(volumeMusicValue);
-            sfxPlayer.SetVolume(volumeSFXValue);
+            musicPlayer.Volume = volumeMusicValue;
+            sfxPlayer.Volume = volumeSFXValue;
         }
 
         isOn = !isOn;

@@ -43,7 +43,7 @@ public class BackgroundColorTable : ColorTable
         //backgroundColorController.SetBackgroundColor(color);
 
         // Json Save System
-        backgroundColorController.SetBackgroundColor(color);
+        backgroundColorController.BackgroundColor = color;
         FindObjectOfType<JsonSystem>().data.backgroundColor = color;
         FindObjectOfType<JsonSystem>().data.backgroundId = id;
         FindObjectOfType<JsonSystem>().SaveData();

@@ -17,12 +17,9 @@ public class BackgroundColorPlayer : MonoBehaviour
         
         id = BackgroundColorPrefController.GetIdBackgroundColor();
 
-        if (id == 0)
-        { 
-            color = defaultColor;
-        } else {
-            color = BackgroundColorPrefController.GetBackgroundColor();
-        }
+        if (id == 0) color = defaultColor;
+        else color = BackgroundColorPrefController.GetBackgroundColor();
+        
         DontDestroyOnLoad(this);
     }
 }

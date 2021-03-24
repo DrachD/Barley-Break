@@ -3,262 +3,170 @@ using System;
 
 public class Game : MonoBehaviour
 {
-    [SerializeField] private Score score;
-    [SerializeField] private Transform pointsParent;
+#region Singleton
+    private static Game _instance;
+    public static Game Instance => _instance;
+#endregion
 
-    [SerializeField] private PanelController panelController;
-
-    [SerializeField] private GameObject prefabNode;
+    [SerializeField] private Block prefabBlock;
     [SerializeField] private Sprite[] sprites;
-    private SFXPlayer sfxPlayer;
     private BarleyBreakData barleyBreakData;
-    public int fieldSizeId;
-    private int[,] idBlocks;
-    private Node[] nodes;
-    private GameObject[,] gameObjects;
-    private GameObject[] gamePrefabs;
-    private GameObject obj;
-    public Texture2D texture;
     public int CameraSize => barleyBreakData.CameraSize;
+    private Texture2D texture;
+    public Block[,] Blocks { get; private set; }
+    private int[] shuffleIds;
+    private static System.Random rnd;
+#region Events
+    public event Action<int> OnChangeScoreEvent;
+    public event Action OnWonEvent;
+#endregion
+    public bool gameOver = false;
+    private int countScore = 0;
 
-    // Field size and start filling data
-    private int x;
-    private int y;
-    private int firstCoordX;
-    private int firstCoordY;
-    private static System.Random rnd = new System.Random();
-
-    #region Main Functions
+#region Main Functions
     private void Awake()
     {
-        barleyBreakData = SelectedField.BarleyBreakData;
-        sfxPlayer = FindObjectOfType<SFXPlayer>();
-        SetFieldData();
-        fieldSizeId = 0;
-        gameReset = true;
-        firstGame = true;
-        if (nodes == null)
-        {
-            nodes = new Node[barleyBreakData.X * barleyBreakData.Y];
-            gamePrefabs = new GameObject[barleyBreakData.X * barleyBreakData.Y];
-            for (int i = 0; i < nodes.Length; i++)
-            {
-                nodes[i] = new Node();
-                gamePrefabs[i] = Instantiate(prefabNode);
-            }
-        }
-    }
+        if (_instance != null) return;
+        _instance = this;
 
+        Initialization();
+    }
     private void Start()
     {
         texture = Resources.Load<Texture2D>("Barley");
-        
         sprites = Resources.LoadAll<Sprite>(texture.name);
 
-        score = FindObjectOfType<Score>();
-
-        Initialization();
-        DataFilling();
-    }
-
-    public bool gameReset;
-    private bool firstGame;
-    private void Update()
-    {
-        if (!gameReset) { return; }
-
-        countScore = 0;
-        score.SetPoint(countScore);
-        gameReset = false;
-
+        // создаем все блоки на сцене
+        CreateBlocks();
+        // Тасуем массив чтобы наши блоки расположились в рандомном порядке
         Shuffle();
-        CreateBlocksSequence();
+        // заполняем блоки значениями (данными) и за одно подпишем MoveBlock на все блоки
+        FillBlocksWithData();
     }
-    #endregion
-
-    #region Moving Blocks
-    private int idEmptyBlockX;
-    private int idEmptyBlockY;
-    private int countScore = 0;
-    public void MoveNode(int idX, int idY)
+#endregion
+#region  ResetGame
+    public void ResetGame()
     {
-        int dx = idEmptyBlockX - idX;
-        int dy = idEmptyBlockY - idY;
+        gameOver = false;
+        OnChangeScoreEvent?.Invoke(0);
+        Shuffle();
+        FillBlocksWithData();
+    }
+#endregion
+    private void Initialization()
+    {
+        barleyBreakData = SelectedField.BarleyBreakData;
+        Blocks = new Block[barleyBreakData.Cols, barleyBreakData.Rows];
+        shuffleIds = new int[barleyBreakData.SizeField];
+        rnd = new System.Random();
+    }
+#region Main Functions
+    private void CreateBlocks()
+    {
+        int i = 0;
+        for (int x = 0; x < barleyBreakData.Cols; x++)
+        {
+            for (int y = 0; y < barleyBreakData.Rows; y++)
+            {
+                Blocks[x, y] = Instantiate(prefabBlock);
+                shuffleIds[i] = i++;
+            }
+        }
+    }
+    private void FillBlocksWithData()
+    {
+        int id = 0;
+        int firstPosX = barleyBreakData.FirstPosX;
+        int firstPosY = barleyBreakData.FirstPosY;
+
+        for (int x = 0, posY = firstPosY; x < barleyBreakData.Cols; x++, posY -= 2)
+        {
+            for (int y = 0, posX = firstPosX; y < barleyBreakData.Rows; y++, posX += 2)
+            {
+                Blocks[x, y].OnChangePlaceBlockEvent += MoveBlock;
+                Blocks[x, y].Init(shuffleIds[id], x, y, posX, posY, sprites[shuffleIds[id]]);
+
+                if (shuffleIds[id] == shuffleIds.Length - 1)
+                {
+                    Blocks[x, y].Init(shuffleIds[id], x, y, posX, posY, sprites[sprites.Length - 1]);
+                    idEmptyBlockX = x;
+                    idEmptyBlockY = y;
+                }
+                id++;
+            }
+        }
+    }
+    private void Shuffle()
+    {
+        int size = shuffleIds.Length;
+
+        int t_size, temp;
+
+        for (int i = 0; i < size; i++)
+        {
+            temp = shuffleIds[i];
+
+            t_size = rnd.Next(size);
+
+            shuffleIds[i] = shuffleIds[t_size];
+            shuffleIds[t_size] = temp;
+        }
+    }
+#endregion
+
+#region Move Blocks Event
+    int idEmptyBlockX;
+    int idEmptyBlockY;
+    private void MoveBlock(Block block)
+    {
+        if (gameOver) { return; }
+
+        int dx = idEmptyBlockX - block.IdX;
+        int dy = idEmptyBlockY - block.IdY;
 
         if ((dx == -1 && dy == 0)
          || (dx == 1 && dy == 0)
          || (dx == 0 && dy == -1)
          || (dx == 0 && dy == 1))
         {
-            sfxPlayer.ClickSoundActive();
-            score.SetPoint(++countScore);
-            SwapBlocks(idX, idY);
-            Swap(idX, idY);
+            SFXPlayer.Instance.ClickSoundActive();
+            OnChangeScoreEvent?.Invoke(++countScore);
+            SwapData(block);
             WinCheck();
         }
     }
-
-    private void Swap(int idX, int idY)
+    private void SwapData(Block block)
     {
-        int temp = idBlocks[idX, idY];
-        idBlocks[idX, idY] = idBlocks[idEmptyBlockX, idEmptyBlockY];
-        idBlocks[idEmptyBlockX, idEmptyBlockY] = temp;
+        Sprite sp_temp = block.Icon;
+        int id_temp = block.Id;
 
-        idEmptyBlockX = idX;
-        idEmptyBlockY = idY;
+        block.Icon = Blocks[idEmptyBlockX, idEmptyBlockY].Icon;
+
+        block.Id = Blocks[idEmptyBlockX, idEmptyBlockY].Id;
+        Blocks[idEmptyBlockX, idEmptyBlockY].Icon = sp_temp;
+
+        Blocks[idEmptyBlockX, idEmptyBlockY].Id = id_temp;
+
+        idEmptyBlockX = block.IdX;
+        idEmptyBlockY = block.IdY;
     }
-
-    private void SwapBlocks(int idX, int idY)
-    {
-        GameObject temp = gameObjects[idX, idY];
-        gameObjects[idX, idY] = gameObjects[idEmptyBlockX, idEmptyBlockY];
-        gameObjects[idEmptyBlockX, idEmptyBlockY] = temp;
-        
-        Node clickedNode = gameObjects[idX, idY].GetComponent<Node>();
-        Node emptyNode = gameObjects[idEmptyBlockX, idEmptyBlockY].GetComponent<Node>();
-
-        float tempX = clickedNode.X;
-        float tempY = clickedNode.Y;
-        int tempIdX = clickedNode.IdX;
-        int tempIdY = clickedNode.IdY;
-
-        clickedNode.MoveBlock(emptyNode.X, emptyNode.Y, emptyNode.IdX, emptyNode.IdY);
-        emptyNode.MoveBlock(tempX, tempY, tempIdX, tempIdY);
-    }
-
     private void WinCheck()
     {
-        int value = 0;
-        int maxValue = x*y - 1;
-
-        for (int i = 0; i < x; i++)
+        int id = 0;
+        for (int i = 0; i < barleyBreakData.Cols; i++)
         {
-            for (int j = 0; j < y; j++)
+            for (int j = 0; j < barleyBreakData.Rows; j++)
             {
-                if (idBlocks[i, j] != value) { return; }
-                
-                if (value >= maxValue) 
-                { 
-                    Debug.Log("You Won!"); 
-                    panelController.WinPanelEnabled();
+                if (Blocks[i, j].Id != id)
+                {
+                    return;
                 }
-
-                value++;
+                Debug.Log(Blocks[i, j].Id + " " + id);
+                id++;
             }
         }
+        OnWonEvent?.Invoke();
+        gameOver = true;
     }
-    #endregion
-    private void CreateObject(Node node, int value)
-    {
-        float coordX = node.X;
-        float coordY = node.Y;
-        int idX = node.IdX;
-        int idY = node.IdY;
-
-        SpriteRenderer sr;
-
-        GameObject obj = gamePrefabs[value];
-        obj.GetComponent<Transform>().localPosition = new Vector3(coordX, coordY);
-        
-        sr = obj.GetComponent<SpriteRenderer>();
-
-        Node objectNode = obj.GetComponent<Node>();
-        objectNode.X = coordX;
-        objectNode.Y = coordY;
-        objectNode.IdX = idX;
-        objectNode.IdY = idY;
-
-        objectNode.SetGameManager(this);
-
-        // Вставляем соответсвующий спрайт в наш объект
-        sr.sprite = sprites[idBlocks[idX, idY]];
-
-        // Вставляем пустой спрайт в соответсвующий объект
-        if (idBlocks[idX, idY] == idBlocks.Length - 1)
-        {
-           sr.sprite = sprites[sprites.Length - 1];
-        }
-
-        gameObjects[idX, idY] = obj;
-
-        // Назначим idEmptyBlockX и idEmptyBlockY соответсвующие координаты id
-        if (idBlocks[idX, idY] == idBlocks.Length - 1)
-        {
-            idEmptyBlockX = idX;
-            idEmptyBlockY = idY;
-        }
-    }
-    private void Shuffle()
-    {
-        int row = x;
-        int column = y;
-
-        int temp, t_row, t_column;
-
-        for (int i = 0; i < row; i++)
-        {
-            for (int j = 0; j < column; j++)
-            {
-                temp = idBlocks[i, j];
-                t_row = rnd.Next(row);
-                t_column = rnd.Next(column);
-                idBlocks[i, j] = idBlocks[t_row, t_column];
-                idBlocks[t_row, t_column] = temp;
-            }
-        }
-    }
-    private void CreateBlocksSequence()
-    {
-        int N = firstCoordX+(2*x);
-        int M = firstCoordY-(2*y);
-
-        int value = 0;
-
-        for (int j = firstCoordY, idX = 0; j >= M + 2; j-=2, idX++)
-        {
-            for (int i = firstCoordX, idY = 0; i <= N - 2; i+=2, idY++)
-            {
-                Node node = CreateNode(i, j, idX, idY, value);
-                CreateObject(node, value);
-
-                value++;
-            }
-        }
-    }
-    private Node CreateNode(int x, int y, int idX, int idY, int value)
-    {
-        nodes[value].X = x;
-        nodes[value].Y = y;
-        nodes[value].IdX = idX;
-        nodes[value].IdY = idY;
-
-        return nodes[value];
-    }
-    #region Initialization blocks data 
-    private void Initialization()
-    {
-        gameObjects = new GameObject[x, y];
-        idBlocks = new int[x, y];
-    }
-
-    private void SetFieldData()
-    {
-        x = barleyBreakData.X;
-        y = barleyBreakData.Y;
-        firstCoordX = barleyBreakData.FirstCoordX;
-        firstCoordY = barleyBreakData.FirstCoordY;
-    }
-    private void DataFilling()
-    {
-        int  value = 0;
-
-        for (int i = 0; i < x; i++)
-        {
-            for (int j = 0; j < y; j++)
-            {
-                idBlocks[i, j] = value++;
-            }
-        }
-    }
-    #endregion
+#endregion
 }

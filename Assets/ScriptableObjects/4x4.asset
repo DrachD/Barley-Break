@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e946059794e8e547bc94365c26dcbc9, type: 3}
   m_Name: 4x4
   m_EditorClassIdentifier: 
-  x: 4
-  y: 4
-  firstCoordX: -3
-  firstCoordY: 4
+  cols: 4
+  rows: 4
+  firstPosX: -3
+  firstPosY: 4
+  sizeField: 16
   cameraSize: 8

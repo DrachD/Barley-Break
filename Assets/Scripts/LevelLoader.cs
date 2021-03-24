@@ -74,12 +74,9 @@ public class LevelLoader : MonoBehaviour
     {
         PluginController.ToastPlugin.Show("сброс", false);
         ClickSound();
-        FindObjectOfType<Game>().gameReset = true;
+        Game.Instance.ResetGame();
     }
 
     // Click Sound
-    public void ClickSound()
-    {
-        FindObjectOfType<SFXPlayer>().ClickSoundActive();
-    }
+    public void ClickSound() => SFXPlayer.Instance.ClickSoundActive();
 }

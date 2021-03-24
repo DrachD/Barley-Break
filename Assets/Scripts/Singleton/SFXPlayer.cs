@@ -5,6 +5,7 @@ public class SFXPlayer : MonoBehaviour
     private static SFXPlayer _instance;
     public static SFXPlayer Instance => _instance; 
     private AudioSource audioSource;
+    public float Volume { set => audioSource.volume = value; }
     private void Awake()
     {
         if (_instance != null) { return; }
@@ -14,14 +15,5 @@ public class SFXPlayer : MonoBehaviour
         audioSource.volume = SFXPrefController.GetSFXVolume();
         DontDestroyOnLoad(this);
     }
-
-    public void SetVolume(float volume)
-    {
-        audioSource.volume = volume;
-    }
-
-    public void ClickSoundActive()
-    {
-        audioSource.Play();
-    }
+    public void ClickSoundActive() => audioSource.Play();
 }

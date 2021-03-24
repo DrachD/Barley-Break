@@ -5,6 +5,7 @@ public class MusicPlayer : MonoBehaviour
     private static MusicPlayer _instance;
     public static MusicPlayer Instance => _instance;
     private AudioSource audioSource;
+    public float Volume { set => audioSource.volume = value; }
     private void Awake()
     {
         if (_instance != null) { return; }
@@ -16,10 +17,5 @@ public class MusicPlayer : MonoBehaviour
         audioSource.volume = MusicPrefController.GetMusicVolume();
 
         DontDestroyOnLoad(this);
-    }
-
-    public void SetVolume(float volume)
-    {
-        audioSource.volume = volume;
     }
 }

@@ -17,15 +17,9 @@ public class JsonSystem : MonoBehaviour
         LoadData();
     }
         
-    public void SaveData()
-    {
-        File.WriteAllText(path, JsonUtility.ToJson(data));
-    }
+    public void SaveData() => File.WriteAllText(path, JsonUtility.ToJson(data));
 
-    private void LoadData()
-    {
-        data = JsonUtility.FromJson<JsonData>(File.ReadAllText(path));
-    }
+    private void LoadData() => data = JsonUtility.FromJson<JsonData>(File.ReadAllText(path));
 
     [Serializable]
     public class JsonData

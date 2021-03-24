@@ -17,13 +17,7 @@ public class ImageSelected : MonoBehaviour
         backgroundColor = GetComponentInChildren<BackgroundColor>();
     }
 
-    public void EnableImage()
-    {
-        image.enabled = true;
-    }
+    public void EnableImage() => image.enabled = true;
 
-    public void DisableImage()
-    {
-        image.enabled = false;
-    }
+    public void DisableImage() => image.enabled = false;
 }

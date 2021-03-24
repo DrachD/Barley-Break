@@ -17,7 +17,7 @@ public class MusicOptionController : MonoBehaviour
     {
         if (musicPlayer)
         {
-            musicPlayer.SetVolume(volumeSlider.value);
+            musicPlayer.Volume = volumeSlider.value;
             MusicPrefController.SetMusicVolume(volumeSlider.value);
         }
     }

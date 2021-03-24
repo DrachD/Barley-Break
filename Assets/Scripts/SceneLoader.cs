@@ -15,14 +15,8 @@ public class SceneLoader : MonoBehaviour
         lastScene = 0;
     }
 
-    private void Awake()
-    {
-        StackManipulation();
-    }
-    private void Update()
-    {
-        BackButtonPressed();
-    }
+    private void Awake() => StackManipulation();
+    private void Update() => BackButtonPressed();
 
     private void BackButtonPressed()
     {

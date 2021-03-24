@@ -50,13 +50,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 0}
-  fieldSizeId: 0
   pointsParent: {fileID: 9130814209436863191}
   panelController: {fileID: 0}
-  prefabNode: {fileID: 6144575903818759315, guid: 69fb9ceaf24eef34883b22324ebfb635,
+  prefabBlock: {fileID: 8148219384664569229, guid: 69fb9ceaf24eef34883b22324ebfb635,
     type: 3}
   sprites: []
-  texture: {fileID: 0}
   gameReset: 0
 --- !u!222 &9130814209436863177
 CanvasRenderer:

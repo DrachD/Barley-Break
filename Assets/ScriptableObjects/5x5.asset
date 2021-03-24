@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e946059794e8e547bc94365c26dcbc9, type: 3}
   m_Name: 5x5
   m_EditorClassIdentifier: 
-  x: 5
-  y: 5
-  firstCoordX: -4
-  firstCoordY: 5
+  cols: 5
+  rows: 5
+  firstPosX: -4
+  firstPosY: 5
+  sizeField: 25
   cameraSize: 10

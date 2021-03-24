@@ -16,15 +16,11 @@ public class FontColorPlayer : MonoBehaviour
         if (_instance != null) { return; }
         _instance = this;
 
-        DontDestroyOnLoad(this);
-
         id = FontColorPrefController.GetIdFontColor();
-        Debug.Log("font " + id);
-        if (id == 1) 
-        { 
-            color = defaultColor;
-        } else {
-            color = FontColorPrefController.GetFontColor();
-        }
+        
+        if (id == 1) color = defaultColor;
+        else color = FontColorPrefController.GetFontColor();
+        
+        DontDestroyOnLoad(this);
     }
 }

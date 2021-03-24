@@ -17,7 +17,7 @@ public class SFXOptionController : MonoBehaviour
     {
         if (sfxPlayer)
         {
-            sfxPlayer.SetVolume(volumeSlider.value);
+            sfxPlayer.Volume = volumeSlider.value;
             SFXPrefController.SetSFXVolume(volumeSlider.value);
         }
     }

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e946059794e8e547bc94365c26dcbc9, type: 3}
   m_Name: 3x3
   m_EditorClassIdentifier: 
-  x: 3
-  y: 3
-  firstCoordX: -2
-  firstCoordY: 3
+  cols: 3
+  rows: 3
+  firstPosX: -2
+  firstPosY: 3
+  sizeField: 9
   cameraSize: 6
