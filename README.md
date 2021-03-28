@@ -1,4 +1,3 @@
-![Wsd1lmZGtUY](https://user-images.githubusercontent.com/14277702/112738581-17e8a400-8f75-11eb-8d96-aae7a0e286f7.jpg)
 # Barley-Break
 
 This my barley-break game on the Unity Engine...
