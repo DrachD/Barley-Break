@@ -48,6 +48,7 @@ public class Game : MonoBehaviour
     public void ResetGame()
     {
         gameOver = false;
+        countScore = 0;
         OnChangeScoreEvent?.Invoke(0);
         Shuffle();
         FillBlocksWithData();
@@ -129,7 +130,7 @@ public class Game : MonoBehaviour
          || (dx == 0 && dy == -1)
          || (dx == 0 && dy == 1))
         {
-            SFXPlayer.Instance.ClickSoundActive();
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.AUDIO_clickSFX);
             OnChangeScoreEvent?.Invoke(++countScore);
             SwapData(block);
             WinCheck();

@@ -172,7 +172,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 494789361}
-  defaultVolume: 0.8
 --- !u!1 &199016709
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,7 +687,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 704735437}
-  defaultVolume: 0.8
 --- !u!1 &1007541367
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,7 +925,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1350766114
 GameObject:
@@ -1216,7 +1214,7 @@ PrefabInstance:
     - target: {fileID: 4670791028746613575, guid: ca0ac4c2b0b35c044938fbd99b8f32b5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4670791028746613575, guid: ca0ac4c2b0b35c044938fbd99b8f32b5,
         type: 3}

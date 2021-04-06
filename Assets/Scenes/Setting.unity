@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 27533376}
   - component: {fileID: 27533378}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -293,9 +293,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 27533374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &38001582
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,7 +435,7 @@ GameObject:
   - component: {fileID: 100555974}
   - component: {fileID: 100555973}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -468,9 +470,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100555971}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &100555974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,7 +525,7 @@ GameObject:
   - component: {fileID: 107799002}
   - component: {fileID: 107799004}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -593,9 +597,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 107799000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &119451838
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,7 +702,7 @@ GameObject:
   - component: {fileID: 185736937}
   - component: {fileID: 185736936}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -731,9 +737,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 185736934}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &185736937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -784,7 +792,7 @@ GameObject:
   - component: {fileID: 196005803}
   - component: {fileID: 196005805}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -856,9 +864,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 196005801}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &206846157
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,7 +882,7 @@ GameObject:
   - component: {fileID: 206846159}
   - component: {fileID: 206846161}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -944,9 +954,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 206846157}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &221583168
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,7 +1059,7 @@ GameObject:
   - component: {fileID: 237646393}
   - component: {fileID: 237646392}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1082,9 +1094,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 237646390}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &237646393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1483,7 +1497,7 @@ GameObject:
   - component: {fileID: 276572187}
   - component: {fileID: 276572189}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1555,9 +1569,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 276572185}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1001 &323130739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1640,7 +1656,7 @@ GameObject:
   - component: {fileID: 331934492}
   - component: {fileID: 331934491}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1675,9 +1691,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 331934489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &331934492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1728,7 +1746,7 @@ GameObject:
   - component: {fileID: 420955693}
   - component: {fileID: 420955692}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1763,9 +1781,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 420955690}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &420955693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1816,7 +1836,7 @@ GameObject:
   - component: {fileID: 458296448}
   - component: {fileID: 458296447}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1851,9 +1871,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 458296445}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &458296448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2060,7 +2082,7 @@ GameObject:
   - component: {fileID: 483738402}
   - component: {fileID: 483738404}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2132,9 +2154,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 483738400}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &526456414
 GameObject:
   m_ObjectHideFlags: 0
@@ -2148,7 +2172,7 @@ GameObject:
   - component: {fileID: 526456416}
   - component: {fileID: 526456418}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2220,9 +2244,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 526456414}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &534199233
 GameObject:
   m_ObjectHideFlags: 0
@@ -2236,7 +2262,7 @@ GameObject:
   - component: {fileID: 534199236}
   - component: {fileID: 534199235}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2271,9 +2297,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 534199233}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &534199236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2324,7 +2352,7 @@ GameObject:
   - component: {fileID: 556755570}
   - component: {fileID: 556755569}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2359,9 +2387,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 556755567}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &556755570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2412,7 +2442,7 @@ GameObject:
   - component: {fileID: 615743884}
   - component: {fileID: 615743886}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2484,9 +2514,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 615743882}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &616514361
 GameObject:
   m_ObjectHideFlags: 0
@@ -2674,7 +2706,7 @@ GameObject:
   - component: {fileID: 664307673}
   - component: {fileID: 664307675}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2746,9 +2778,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 664307671}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &667660423
 GameObject:
   m_ObjectHideFlags: 0
@@ -3147,7 +3181,7 @@ GameObject:
   - component: {fileID: 699448582}
   - component: {fileID: 699448581}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3182,9 +3216,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 699448579}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &699448582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3413,7 +3449,7 @@ GameObject:
   - component: {fileID: 773847473}
   - component: {fileID: 773847475}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3485,9 +3521,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 773847471}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &808665141
 GameObject:
   m_ObjectHideFlags: 0
@@ -3748,7 +3786,7 @@ GameObject:
   - component: {fileID: 847563550}
   - component: {fileID: 847563549}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3783,9 +3821,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 847563547}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &847563550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3923,7 +3963,7 @@ GameObject:
   - component: {fileID: 858926238}
   - component: {fileID: 858926240}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3995,9 +4035,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 858926236}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &883568385
 GameObject:
   m_ObjectHideFlags: 0
@@ -4011,7 +4053,7 @@ GameObject:
   - component: {fileID: 883568388}
   - component: {fileID: 883568387}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4046,9 +4088,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 883568385}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &883568388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4099,7 +4143,7 @@ GameObject:
   - component: {fileID: 883974458}
   - component: {fileID: 883974457}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4134,9 +4178,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 883974455}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &883974458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4187,7 +4233,7 @@ GameObject:
   - component: {fileID: 895071978}
   - component: {fileID: 895071980}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4259,9 +4305,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 895071976}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &923106079
 GameObject:
   m_ObjectHideFlags: 0
@@ -4362,7 +4410,7 @@ GameObject:
   - component: {fileID: 946322028}
   - component: {fileID: 946322027}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4397,9 +4445,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 946322025}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &946322028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4450,7 +4500,7 @@ GameObject:
   - component: {fileID: 966364967}
   - component: {fileID: 966364969}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4522,9 +4572,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 966364965}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &981787106
 GameObject:
   m_ObjectHideFlags: 0
@@ -4581,7 +4633,7 @@ GameObject:
   - component: {fileID: 998562467}
   - component: {fileID: 998562466}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4616,9 +4668,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 998562464}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &998562467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5261,7 +5315,7 @@ GameObject:
   - component: {fileID: 1221459888}
   - component: {fileID: 1221459890}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5333,9 +5387,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1221459886}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &1300804501
 GameObject:
   m_ObjectHideFlags: 0
@@ -5436,7 +5492,7 @@ GameObject:
   - component: {fileID: 1355572800}
   - component: {fileID: 1355572802}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5508,9 +5564,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1355572798}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &1363432596
 GameObject:
   m_ObjectHideFlags: 0
@@ -5524,7 +5582,7 @@ GameObject:
   - component: {fileID: 1363432599}
   - component: {fileID: 1363432598}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5559,9 +5617,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1363432596}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &1363432599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5786,7 +5846,7 @@ GameObject:
   - component: {fileID: 1422044125}
   - component: {fileID: 1422044124}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5821,9 +5881,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1422044122}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &1422044125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5961,7 +6023,7 @@ GameObject:
   - component: {fileID: 1444921350}
   - component: {fileID: 1444921352}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6033,9 +6095,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1444921348}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &1447616107
 GameObject:
   m_ObjectHideFlags: 0
@@ -6049,7 +6113,7 @@ GameObject:
   - component: {fileID: 1447616110}
   - component: {fileID: 1447616109}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6084,9 +6148,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1447616107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &1447616110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6137,7 +6203,7 @@ GameObject:
   - component: {fileID: 1451680147}
   - component: {fileID: 1451680146}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6172,9 +6238,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1451680144}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &1451680147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6225,7 +6293,7 @@ GameObject:
   - component: {fileID: 1479813335}
   - component: {fileID: 1479813337}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6297,9 +6365,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1479813333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &1516068834
 GameObject:
   m_ObjectHideFlags: 0
@@ -6313,7 +6383,7 @@ GameObject:
   - component: {fileID: 1516068837}
   - component: {fileID: 1516068836}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6348,9 +6418,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1516068834}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &1516068837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6474,7 +6546,7 @@ GameObject:
   - component: {fileID: 1543707758}
   - component: {fileID: 1543707760}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6546,9 +6618,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1543707756}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &1557572460
 GameObject:
   m_ObjectHideFlags: 0
@@ -6649,7 +6723,7 @@ GameObject:
   - component: {fileID: 1590353330}
   - component: {fileID: 1590353329}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6684,9 +6758,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1590353327}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &1590353330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7172,7 +7248,7 @@ GameObject:
   - component: {fileID: 1662130133}
   - component: {fileID: 1662130132}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7207,9 +7283,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1662130130}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &1662130133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7260,7 +7338,7 @@ GameObject:
   - component: {fileID: 1667120805}
   - component: {fileID: 1667120807}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7332,9 +7410,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1667120803}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &1745689092
 GameObject:
   m_ObjectHideFlags: 0
@@ -7435,7 +7515,7 @@ GameObject:
   - component: {fileID: 1755782887}
   - component: {fileID: 1755782889}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7507,9 +7587,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1755782885}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &1765381964
 GameObject:
   m_ObjectHideFlags: 0
@@ -7610,7 +7692,7 @@ GameObject:
   - component: {fileID: 1776673240}
   - component: {fileID: 1776673239}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7645,9 +7727,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1776673237}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &1776673240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7698,7 +7782,7 @@ GameObject:
   - component: {fileID: 1834051240}
   - component: {fileID: 1834051242}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7770,9 +7854,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1834051238}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &1853735535
 GameObject:
   m_ObjectHideFlags: 0
@@ -7873,7 +7959,7 @@ GameObject:
   - component: {fileID: 1860632613}
   - component: {fileID: 1860632612}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7908,9 +7994,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1860632610}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &1860632613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8483,7 +8571,7 @@ GameObject:
   - component: {fileID: 2042652672}
   - component: {fileID: 2042652674}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8555,9 +8643,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2042652670}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &2055817620
 GameObject:
   m_ObjectHideFlags: 0
@@ -8571,7 +8661,7 @@ GameObject:
   - component: {fileID: 2055817622}
   - component: {fileID: 2055817624}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8643,9 +8733,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2055817620}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &2057104443
 GameObject:
   m_ObjectHideFlags: 0
@@ -8659,7 +8751,7 @@ GameObject:
   - component: {fileID: 2057104446}
   - component: {fileID: 2057104445}
   m_Layer: 5
-  m_Name: FontColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8694,9 +8786,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2057104443}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ca00623b761e4341b18092126052dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!114 &2057104446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8834,7 +8928,7 @@ GameObject:
   - component: {fileID: 2074643718}
   - component: {fileID: 2074643720}
   m_Layer: 5
-  m_Name: BackgroundColorWrapper
+  m_Name: ColorWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8906,9 +9000,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2074643716}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819fe3e3ecc0aed419fcbe4a86407c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 152a38735832ea84781664e5ec55f8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Id: 0
 --- !u!1 &2082162554
 GameObject:
   m_ObjectHideFlags: 0

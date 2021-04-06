@@ -78,5 +78,9 @@ public class LevelLoader : MonoBehaviour
     }
 
     // Click Sound
-    public void ClickSound() => SFXPlayer.Instance.ClickSoundActive();
+    public void ClickSound()
+    {
+        AudioManager audio = AudioManager.Instance;
+        audio.PlaySFX(audio.AUDIO_clickSFX);
+    }
 }

@@ -2,11 +2,24 @@
 using System.IO;
 using System;
 
+[Serializable]
+public class JsonData
+{
+    public Color backgroundColor;
+    public int backgroundId;
+    [Space]
+    public Color fontColor;
+    public int fontId;
+    [Space]
+    public float volumeSFX;
+    public float volumeMusic;
+}
+
 public class JsonSystem : MonoBehaviour
 {
-    public JsonData data = new JsonData();
+    [SerializeField] JsonData data = new JsonData();
+    public JsonData JsonData => data;
     private string path;
-
     private void Awake()
     {
 #if UNITY_ANDROID && !UNITY_EDITOR
@@ -21,13 +34,11 @@ public class JsonSystem : MonoBehaviour
 
     private void LoadData() => data = JsonUtility.FromJson<JsonData>(File.ReadAllText(path));
 
-    [Serializable]
-    public class JsonData
+    private void OnDestroy()
     {
-        public Color backgroundColor;
-        public int backgroundId;
-        [Space]
-        public Color fontColor;
-        public int fontId;
+        JsonData.volumeMusic = AudioManager.Instance.GetMusicVolume();
+        JsonData.volumeSFX = AudioManager.Instance.GetSFXVolume();
+        SaveData();
     }
+
 }
